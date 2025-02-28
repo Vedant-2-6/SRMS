@@ -1,0 +1,51 @@
+.feevoucher {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .feevoucher h1 {
+    color: #633bad;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .feevoucher p {
+    color: #555;
+    font-size: 1.2em;
+  }
+  
+  .voucher-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .voucher-form label {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .voucher-form input, .voucher-form select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .voucher-form button {
+    padding: 10px 20px;
+    background-color: #633bad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .voucher-form button:hover {
+    background-color: #4f2c8d;
+  }
+  

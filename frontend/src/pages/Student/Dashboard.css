@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.dashboard {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #633bad;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.sign-out {
+  background-color: #2e144d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out:hover {
+  background-color: #522a6c;
+}
+
+.welcome-section {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  flex-basis: calc(30% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #633bad;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 1em;
+}
+
+.card i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #633bad;
+}
+
+.recent-activity {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.activity span {
+  color: #888;
+}

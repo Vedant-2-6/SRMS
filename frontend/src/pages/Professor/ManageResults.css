@@ -1,0 +1,107 @@
+.manage-results {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.manage-results h1 {
+  color: #633bad;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.results-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-form label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.results-form select,
+.results-form button {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #633bad;
+  color: white;
+}
+
+.results-table td {
+  color: #555;
+}
+
+.results-table input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #633bad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #4e2d9e;
+}
+
+.pagination button.active {
+  background-color: #4e2d9e;
+}
