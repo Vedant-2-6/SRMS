@@ -77,9 +77,15 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.back-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
 
 .back-button:hover {
-  background-color: #0056b3;
+  background-color: #633bad;
 }
 .pagination {
   display: flex;

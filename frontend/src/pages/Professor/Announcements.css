@@ -58,7 +58,9 @@
 
 .announcement-form .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Right-align buttons */
+  gap: 20px; /* Add space between buttons */
+  margin-top: 10px; /* Add some space above the buttons */
 }
 
 .announcement-form button {
@@ -70,8 +72,6 @@
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .announcement-form button:hover {

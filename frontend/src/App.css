@@ -39,10 +39,12 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, rgba(85, 58, 182, 0.38), #cfcff1, rgba(85, 58, 182, 0.38)); /* Light blue to purple to pink gradient */
+  background: linear-gradient(to bottom, #9584cf, #cfcff1, #9584cf);
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
+
 
 .container {
   background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
