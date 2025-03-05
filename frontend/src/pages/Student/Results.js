@@ -5,7 +5,7 @@ import './Results.css';
 
 const Results = () => {
   const [results, setResults] = useState({
-    name: 'Vedant Sharma',
+    name: 'Vedant Patel',
     rollNo: '10001',
     branch: 'Computer Engineering',
     semester: '6th',
