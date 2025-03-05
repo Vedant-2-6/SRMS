@@ -1,14 +1,26 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Dashboard.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    // Clear any authentication tokens or user data here
+    // For example, if using local storage:
+    localStorage.removeItem('authToken');
+
+    // Redirect to login page
+    navigate('/');
+  };
+
   return (
       <div className="dashboard">
         <header className="dashboard-header">
           <h1>Student Dashboard</h1>
-          <button className="sign-out">Sign Out</button>
+          <button onClick={handleSignOut} className="sign-out">Sign Out</button>
         </header>
         <section className="welcome-section">
           <h2>Welcome, [Student Name]</h2>

@@ -1,21 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { useState } from "react";
 
 const ProfessorDashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleSignOut = () => {
+    // Clear any authentication tokens or user data here
+    // For example, if using local storage:
+    localStorage.removeItem('authToken');
+
+    // Redirect to login page
+    navigate('/');
   };
 
   return (
       <div className="professor-dashboard">
         <header className="dashboard-header">
           <h1>Professor Dashboard</h1>
-          <button className="sign-out">Sign Out</button>
+          <button onClick={handleSignOut} className="sign-out">Sign Out</button>
         </header>
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <section className="welcome-section">
